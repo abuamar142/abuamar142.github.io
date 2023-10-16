@@ -22608,7 +22608,7 @@ s=$.ap
 s.toString
 r=$.aI().d.i(0,0)
 r.toString
-s.PA(new A.Kp(r,new A.uZ("/cafe-menu","Application",!1,q,null),new A.jZ(r,t.bT)))
+s.PA(new A.Kp(r,new A.uZ("/home","Application",!1,q,null),new A.jZ(r,t.bT)))
 s.vU()},
 aeB(a,b,c,d,e){return A.aBA(a,b,c,d,e,e)},
 aBA(a,b,c,d,e,f){var s=0,r=A.a0(f),q
