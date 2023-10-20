@@ -51142,7 +51142,7 @@ $2(a,b){var s,r
 if(b.a===B.iT)return B.OU
 s=$.pY()
 s=A.U9(null,A.b20().$0().d,s,null)
-r=b.b!=null?"/all-product":"/"
+r=b.b!=null?"/dashboard":"/"
 return new A.Bu(r,"Application",s,!1,$.aNe(),null)},
 $S:421}
 A.vo.prototype={
