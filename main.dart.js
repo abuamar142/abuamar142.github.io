@@ -51102,10 +51102,12 @@ A.Nn.prototype={
 K(a){var s=this.c
 return A.aIX(new A.a85(),s.QN(s.gxN().iz()),t.t6)}}
 A.a85.prototype={
-$2(a,b){var s
+$2(a,b){var s,r
 if(b.a===B.fv)return B.OU
 s=$.pZ()
-return new A.Bw("/all-product","Application",A.Ub(null,A.b26().$0().d,s,null),!1,$.aNj(),null)},
+s=A.Ub(null,A.b26().$0().d,s,null)
+r=b.b!=null?"/dashboard":"/"
+return new A.Bw(r,"Application",s,!1,$.aNj(),null)},
 $S:480}
 A.vn.prototype={
 gxN(){var s,r,q,p,o=this,n=o.c
