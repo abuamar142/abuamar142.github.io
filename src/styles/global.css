@@ -83,6 +83,28 @@ body {
   }
 }
 
+/* Motion is decoration here (hover fades, the arrow slide, the 1px press), so
+   a visitor who asked for less motion gets none of it rather than a reduced
+   version. Layout and colour changes still apply instantly. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .btn:active {
+    transform: none;
+  }
+
+  .action-link:hover .arrow {
+    transform: none;
+  }
+}
+
 /* Every interactive element gets the same visible ring; the brief's
    accessibility budget depends on it, and the design system has no shadow to
    fall back on. */
