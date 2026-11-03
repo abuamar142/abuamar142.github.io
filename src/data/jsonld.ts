@@ -8,6 +8,18 @@ import type { Snapshot } from '../data/types'
  * When the snapshot is a day old the graph is a day old, which is the tradeoff
  * the runtime fetch already made for the visible content.
  */
+/** Splits "City, Region, Country" into the two parts schema.org wants. */
+function parseAddress(location: string): { addressLocality?: string; addressRegion?: string } {
+  const parts = location
+    .split(',')
+    .map((part) => part.trim())
+    .filter(Boolean)
+  return {
+    addressLocality: parts[0],
+    addressRegion: parts[1],
+  }
+}
+
 export function buildJsonLd(data: Snapshot, lang: 'id' | 'en', siteUrl: string): string {
   const { personalInfo, projects } = data
   const origin = siteUrl.replace(/\/$/, '')
@@ -21,10 +33,12 @@ export function buildJsonLd(data: Snapshot, lang: 'id' | 'en', siteUrl: string):
     email: `mailto:${personalInfo.email}`,
     url: origin,
     description: lang === 'id' ? personalInfo.bio_id : personalInfo.bio_en,
+    // Derived from the location string the profile returns
+    // ("Nganjuk, Jawa Timur, Indonesia") instead of being written here a second
+    // time: a hardcoded city is exactly what went stale when the home base moved.
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Bantul',
-      addressRegion: 'Yogyakarta',
+      ...parseAddress(personalInfo.location),
       addressCountry: 'ID',
     },
     sameAs: [personalInfo.github, personalInfo.linkedin, personalInfo.instagram, 'https://abuamar.online'].filter(

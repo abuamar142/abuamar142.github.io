@@ -48,7 +48,6 @@ const snapshot = {
   skills: profile.data.skills ?? [],
   experiences: profile.data.experiences ?? [],
   projects: profile.data.projects ?? [],
-  education: profile.data.education ?? [],
   achievements: achievements.data.achievements ?? [],
   releases,
 }

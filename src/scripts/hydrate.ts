@@ -81,7 +81,6 @@ export function hydrate({ lang, t, snapshot }: HydrateOptions): void {
           skills: LiveData['skills']
           experiences: LiveData['experiences']
           projects: LiveData['projects']
-          education: LiveData['education']
         }>('/profile'),
         fetchJSON<{ achievements: LiveData['achievements'] }>('/achievements'),
       ])
@@ -91,7 +90,6 @@ export function hydrate({ lang, t, snapshot }: HydrateOptions): void {
         skills: profile.skills ?? [],
         experiences: profile.experiences ?? [],
         projects: profile.projects ?? [],
-        education: profile.education ?? [],
         achievements: achievements.achievements ?? [],
       })
     } catch (error) {

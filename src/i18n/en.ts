@@ -8,9 +8,6 @@ export const en: Copy = {
     'Entry point to the work of M. Abu Amar Al Badawi: a software engineer building mobile and web products end to end with Flutter, Next.js, Go, and Linux.',
   skipToContent: 'Skip to content',
   heroKicker: 'Software engineering · mobile · web · backend',
-  heroTitle: 'Products that ship, not mockups.',
-  heroLead:
-    'Flutter apps, Next.js frontends, Go backends, and the infrastructure behind them, released to production, from data model to deployment.',
   heroPrimary: 'Open the portfolio',
   heroSecondary: 'Read the CV',
   heroTertiary: 'Get in touch',
@@ -89,7 +86,6 @@ export const en: Copy = {
 
   footerNote: 'Built with Astro. Data from portfolio-service.',
   footerPortfolio: 'Portfolio',
-  footerGithub: 'GitHub',
   footerLinkedin: 'LinkedIn',
   footerInstagram: 'Instagram',
 

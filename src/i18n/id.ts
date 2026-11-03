@@ -8,9 +8,6 @@ export const id: Copy = {
     'Pintu masuk karya M. Abu Amar Al Badawi: Software Engineer yang membangun produk mobile dan web end to end dengan Flutter, Next.js, Go, dan Linux.',
   skipToContent: 'Lompat ke konten',
   heroKicker: 'Software engineering · mobile · web · backend',
-  heroTitle: 'Produk nyata, bukan mockup.',
-  heroLead:
-    'Aplikasi Flutter, frontend Next.js, backend Go, dan infrastruktur di belakangnya, dirilis ke produksi, dari model data sampai deployment.',
   heroPrimary: 'Buka portofolio',
   heroSecondary: 'Lihat CV',
   heroTertiary: 'Hubungi',
@@ -90,7 +87,6 @@ export const id: Copy = {
 
   footerNote: 'Dibangun dengan Astro. Data dari portfolio-service.',
   footerPortfolio: 'Portofolio',
-  footerGithub: 'GitHub',
   footerLinkedin: 'LinkedIn',
   footerInstagram: 'Instagram',
 

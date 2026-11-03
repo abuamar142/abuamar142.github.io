@@ -92,7 +92,7 @@ const FEATURED = [
   'LMS Bahasa Arab',
 ]
 
-export function featuredProjects(projects: Project[]): Project[] {
+function featuredProjects(projects: Project[]): Project[] {
   const byTitle = new Map(projects.map((project) => [project.title, project]))
   const ordered = FEATURED.map((title) => byTitle.get(title)).filter(
     (project): project is Project => project !== undefined,

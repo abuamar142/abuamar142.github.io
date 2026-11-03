@@ -40,14 +40,6 @@ export interface Experience {
   technologies: string[]
 }
 
-export interface Education {
-  institution: string
-  degree: string
-  field: string
-  duration: string
-  gpa: string
-}
-
 export interface Achievement {
   id: string
   title: string
@@ -65,17 +57,24 @@ export interface Release {
   publishedAt: string
 }
 
-/** The committed snapshot: what the build renders, and the fallback at runtime. */
+/**
+ * The committed snapshot: what the build renders, and the fallback at runtime.
+ *
+ * It holds exactly what this site shows. The profile endpoint also returns the
+ * education list, which the hub does not render (that lives at abuamar.online);
+ * carrying it here would only make the file bigger and the type wider than any
+ * consumer needs.
+ */
 export interface Snapshot {
+  /** When the snapshot was taken: the only way to tell how old the fallback is. */
   fetchedAt: string
   personalInfo: PersonalInfo
   skills: Skill[]
   experiences: Experience[]
   projects: Project[]
-  education: Education[]
   achievements: Achievement[]
   releases: Release[]
 }
 
-/** What the island consumes — the same shape minus build-only fields. */
-export type LiveData = Omit<Snapshot, 'fetchedAt' | 'releases'> & { releases?: Release[] }
+/** What the island re-renders from the live API: the snapshot minus build-only fields. */
+export type LiveData = Omit<Snapshot, 'fetchedAt' | 'releases'>

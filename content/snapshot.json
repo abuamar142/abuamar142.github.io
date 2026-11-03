@@ -1,19 +1,19 @@
 {
-  "fetchedAt": "2026-11-03T14:41:04.884Z",
+  "fetchedAt": "2026-11-03T16:41:04.687Z",
   "personalInfo": {
     "fullname": "M. Abu Amar Al Badawi, S.Kom",
     "nickname": "Abu Amar",
     "title": "Software Engineer",
     "email": "abuamar.albadawi@gmail.com",
     "phone": "+6285117692402",
-    "location": "Bantul, Yogyakarta, Indonesia",
+    "location": "Nganjuk, Jawa Timur, Indonesia",
     "github": "https://github.com/abuamar142",
     "linkedin": "https://linkedin.com/in/abu-amar",
     "instagram": "https://instagram.com/abuuamar_",
     "whatsApp": "https://wa.me/6285117692402",
     "website": "https://abuamar.online",
-    "about_id": "Software Engineer yang berbasis di Bantul, Yogyakarta. Saya lulus Informatika (S.Kom, IPK 3,90) dari Universitas Jenderal Achmad Yani Yogyakarta pada Oktober 2025. Saya bekerja sebagai Fullstack Javascript Developer di Berijalan (React Native, Javascript, TypeScript, Next.js) — intern sejak September 2025, freelance sejak Desember 2025 — serta sebagai Mobile Engineer full-time di Ikavia Digital Nusantara sejak Mei 2026 dengan Flutter. Sebelumnya intern Full-Stack di Refactory dan lulusan Bangkit Academy jalur Mobile Development. Saya merilis produk ke produksi, dari model data hingga deployment, dengan Linux harian.",
-    "about_en": "Software Engineer based in Bantul, Yogyakarta. I graduated in Informatics (S.Kom, GPA 3.90) from Universitas Jenderal Achmad Yani Yogyakarta in October 2025. I work as a Fullstack Javascript Developer at Berijalan (React Native, Javascript, TypeScript, Next.js) — intern from September 2025, freelance since December 2025 — and as a full-time Mobile Engineer at Ikavia Digital Nusantara since May 2026, building with Flutter. Previously a Full-Stack intern at Refactory and a Bangkit Academy Mobile Development graduate. I ship products to production, from data model to deployment, on Linux daily.",
+    "about_id": "Software Engineer yang berbasis di Nganjuk, Jawa Timur. Saya lulus Informatika (S.Kom, IPK 3,90) dari Universitas Jenderal Achmad Yani Yogyakarta pada Oktober 2025. Saya bekerja sebagai Fullstack Javascript Developer di Berijalan (React Native, Javascript, TypeScript, Next.js) — intern sejak September 2025, freelance sejak Desember 2025 — serta sebagai Mobile Engineer full-time di Ikavia Digital Nusantara sejak Mei 2026 dengan Flutter. Sebelumnya intern Full-Stack di Refactory dan lulusan Bangkit Academy jalur Mobile Development. Saya merilis produk ke produksi, dari model data hingga deployment, dengan Linux harian.",
+    "about_en": "Software Engineer based in Nganjuk, East Java. I graduated in Informatics (S.Kom, GPA 3.90) from Universitas Jenderal Achmad Yani Yogyakarta in October 2025. I work as a Fullstack Javascript Developer at Berijalan (React Native, Javascript, TypeScript, Next.js) — intern from September 2025, freelance since December 2025 — and as a full-time Mobile Engineer at Ikavia Digital Nusantara since May 2026, building with Flutter. Previously a Full-Stack intern at Refactory and a Bangkit Academy Mobile Development graduate. I ship products to production, from data model to deployment, on Linux daily.",
     "bio_id": "Software Engineer yang membangun produk mobile dan web secara end to end: aplikasi Flutter, frontend React Native dan Next.js, beserta backend dan infrastruktur di belakangnya.",
     "bio_en": "Software Engineer building mobile and web products end to end: Flutter apps, React Native and Next.js frontends, and the backend and infrastructure behind them."
   },
@@ -469,36 +469,6 @@
       ],
       "githubUrl": "",
       "liveUrl": ""
-    }
-  ],
-  "education": [
-    {
-      "institution": "Universitas Jenderal Achmad Yani Yogyakarta",
-      "degree": "Sarjana (S1)",
-      "field": "Informatika",
-      "duration": "2021 - 2025",
-      "gpa": "3.90"
-    },
-    {
-      "institution": "Pondok Pesantren Al-Munawwir Krapyak",
-      "degree": "Pendidikan Agama",
-      "field": "Komplek Madrasah Huffadh 2",
-      "duration": "2021 - Saat ini",
-      "gpa": ""
-    },
-    {
-      "institution": "Pondok Pesantren Al-Munawwir Krapyak",
-      "degree": "Pendidikan Agama",
-      "field": "Komplek Madrasah Huffadh 2",
-      "duration": "2021 - 2024",
-      "gpa": ""
-    },
-    {
-      "institution": "MAN 2 Kabupaten Kediri",
-      "degree": "SMA",
-      "field": "Kelas PDCI (Peserta Didik Cerdas Istimewa)",
-      "duration": "2017 - 2019",
-      "gpa": "Lulus 2 tahun"
     }
   ],
   "achievements": [

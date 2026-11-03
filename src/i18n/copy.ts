@@ -15,8 +15,6 @@ export interface Copy {
   metaDescription: string
   skipToContent: string
   heroKicker: string
-  heroTitle: string
-  heroLead: string
   heroPrimary: string
   heroSecondary: string
   heroTertiary: string
@@ -73,7 +71,6 @@ export interface Copy {
   contactLocation: string
   footerNote: string
   footerPortfolio: string
-  footerGithub: string
   footerLinkedin: string
   footerInstagram: string
   staleBanner: string
