@@ -103,6 +103,18 @@ export function featuredProjects(projects: Project[]): Project[] {
   return ordered
 }
 
+/**
+ * Cover images are hub-owned assets, not API fields: the service has no image
+ * column, and these were captured from the running product. A project without
+ * a capture renders without the frame rather than with a placeholder.
+ */
+const COVERS: Record<string, string> = {
+  'Tambangan - Perahu Tracker': '/media/tambangan.webp',
+  'Hafalan - Quran Tracker': '/media/hafalan.webp',
+  'Pondok Pesantren Asy-Syaikhoni': '/media/asyaikhoni.webp',
+  'Plasma Token Usage': '/media/plasma.webp',
+}
+
 export function renderProjects(projects: Project[], releases: Map<string, string>, locale: Locale): string {
   return featuredProjects(projects)
     .map((project, index) => {
@@ -128,6 +140,12 @@ export function renderProjects(projects: Project[], releases: Map<string, string
             <span class="data">${number}</span>
             ${tag ? `<span class="caption text-terracotta">${esc(tag)}</span>` : '<span class="caption"></span>'}
           </div>
+          ${
+            COVERS[project.title]
+              ? `<img src="${COVERS[project.title]}" alt="" width="880" height="495" loading="lazy" decoding="async"
+                   class="block aspect-[16/9] w-full border-b border-hairline-light object-cover object-top" />`
+              : ''
+          }
           <div class="flex flex-1 flex-col gap-3 px-5 py-5">
             <h3 class="display-sub">${esc(project.title)}</h3>
             <p class="prose-body text-[0.9375rem] leading-relaxed">${esc(project.description)}</p>
