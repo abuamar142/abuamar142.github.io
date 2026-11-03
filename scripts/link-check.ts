@@ -38,7 +38,10 @@ function collect(html: string): Set<string> {
   return urls
 }
 
-async function probe(url: string): Promise<{ url: string; status: number | null; error?: string }> {
+async function probe(
+  url: string,
+  attempt = 1,
+): Promise<{ url: string; status: number | null; error?: string }> {
   try {
     // HEAD first: cheaper and enough for a link target. Some hosts reject HEAD,
     // so a 405/501 falls back to GET.
@@ -55,6 +58,13 @@ async function probe(url: string): Promise<{ url: string; status: number | null;
         signal: AbortSignal.timeout(TIMEOUT_MS),
         headers: { 'User-Agent': 'abuamar-hub-linkcheck' },
       })
+    }
+    // 429 is a throttle, not a missing page: Instagram and friends rate-limit
+    // datacenter IPs, so a CI runner is told to slow down for a link that works
+    // fine in a browser. Retry once, then accept it as reachable.
+    if (response.status === 429 && attempt === 1) {
+      await new Promise((resolve) => setTimeout(resolve, 3000))
+      return probe(url, 2)
     }
     return { url, status: response.status }
   } catch (error) {
@@ -95,12 +105,18 @@ console.log(`checking ${list.length} external links`)
 
 const results = await pool(list, CONCURRENCY, probe)
 
-// 2xx/3xx are fine. 401/403 mean the page exists but is gated to bots, which is
-// not a broken link for a visitor; anything else (404, 410, 5xx, DNS failure)
-// is a real defect.
+// What counts as broken, and what only looks broken from a CI runner:
+//
+//   401 / 403  the page exists but gates bots (LinkedIn answers 999)
+//   429        the host throttles this IP; a browser visitor is fine
+//
+// Everything else that is not 2xx/3xx is a real defect: 404 and 410 are gone,
+// 5xx means the deploy behind the link is down, and a null status is DNS or
+// connection failure.
+const NOT_A_DEFECT = new Set([401, 403, 429, 999])
 const bad = results.filter((result) => {
   if (result.status === null) return true
-  if (result.status === 401 || result.status === 403) return false
+  if (NOT_A_DEFECT.has(result.status)) return false
   return result.status < 200 || result.status >= 400
 })
 
