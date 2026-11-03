@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro'
+import HubPage from '../components/HubPage.astro'
+import id from '../i18n/id'
+import snapshot from '../../content/snapshot.json'
+import type { Snapshot } from '../data/types'
+import { buildJsonLd } from '../data/jsonld'
+
+const data = snapshot as unknown as Snapshot
+const canonical = new URL('/', Astro.site).toString()
+---
+
+<Base
+  jsonLd={buildJsonLd(data, 'id', Astro.site?.toString() ?? 'https://abuamar142.github.io')}
+  lang="id"
+  title={`${id.siteTitle} · Software Engineer`}
+  description={id.metaDescription}
+  canonical={canonical}
+  alternates={[
+    { hreflang: 'id', href: canonical },
+    { hreflang: 'en', href: new URL('/en/', Astro.site).toString() },
+    { hreflang: 'x-default', href: canonical },
+  ]}
+>
+  <HubPage data={data} t={id} lang="id" />
+</Base>

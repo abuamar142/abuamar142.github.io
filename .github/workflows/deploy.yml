@@ -1,0 +1,60 @@
+name: Deploy hub
+
+# Static build → GitHub Pages. `dist/` is never committed: what ships is
+# whatever this workflow built from the source at that commit.
+on:
+  push:
+    branches: [master]
+  # Data lives in the API, so a rebuild is only needed when the code changes or
+  # when someone wants the committed snapshot refreshed.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.0
+
+      - name: Install
+        run: bun install --frozen-lockfile
+
+      - name: Type check
+        run: bunx astro check
+
+      - name: Build
+        run: bun run build
+
+      # Gate: a dead link in the deployed page is a defect a visitor sees
+      # immediately, so it blocks the upload rather than being reported after.
+      - name: Link check
+        run: bun run linkcheck
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

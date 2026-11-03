@@ -1,0 +1,902 @@
+{
+  "fetchedAt": "2026-11-03T14:41:04.884Z",
+  "personalInfo": {
+    "fullname": "M. Abu Amar Al Badawi, S.Kom",
+    "nickname": "Abu Amar",
+    "title": "Software Engineer",
+    "email": "abuamar.albadawi@gmail.com",
+    "phone": "+6285117692402",
+    "location": "Bantul, Yogyakarta, Indonesia",
+    "github": "https://github.com/abuamar142",
+    "linkedin": "https://linkedin.com/in/abu-amar",
+    "instagram": "https://instagram.com/abuuamar_",
+    "whatsApp": "https://wa.me/6285117692402",
+    "website": "https://abuamar.online",
+    "about_id": "Software Engineer yang berbasis di Bantul, Yogyakarta. Saya lulus Informatika (S.Kom, IPK 3,90) dari Universitas Jenderal Achmad Yani Yogyakarta pada Oktober 2025. Saya bekerja sebagai Fullstack Javascript Developer di Berijalan (React Native, Javascript, TypeScript, Next.js) — intern sejak September 2025, freelance sejak Desember 2025 — serta sebagai Mobile Engineer full-time di Ikavia Digital Nusantara sejak Mei 2026 dengan Flutter. Sebelumnya intern Full-Stack di Refactory dan lulusan Bangkit Academy jalur Mobile Development. Saya merilis produk ke produksi, dari model data hingga deployment, dengan Linux harian.",
+    "about_en": "Software Engineer based in Bantul, Yogyakarta. I graduated in Informatics (S.Kom, GPA 3.90) from Universitas Jenderal Achmad Yani Yogyakarta in October 2025. I work as a Fullstack Javascript Developer at Berijalan (React Native, Javascript, TypeScript, Next.js) — intern from September 2025, freelance since December 2025 — and as a full-time Mobile Engineer at Ikavia Digital Nusantara since May 2026, building with Flutter. Previously a Full-Stack intern at Refactory and a Bangkit Academy Mobile Development graduate. I ship products to production, from data model to deployment, on Linux daily.",
+    "bio_id": "Software Engineer yang membangun produk mobile dan web secara end to end: aplikasi Flutter, frontend React Native dan Next.js, beserta backend dan infrastruktur di belakangnya.",
+    "bio_en": "Software Engineer building mobile and web products end to end: Flutter apps, React Native and Next.js frontends, and the backend and infrastructure behind them."
+  },
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "category": "tools",
+      "level": "intermediate"
+    },
+    {
+      "name": "API Contract (Postman/Swagger)",
+      "category": "tools",
+      "level": "advanced"
+    },
+    {
+      "name": "C4 Model Documentation",
+      "category": "tools",
+      "level": "advanced"
+    },
+    {
+      "name": "OOP & Design Patterns",
+      "category": "tools",
+      "level": "advanced"
+    },
+    {
+      "name": "Google Sheets / Excel",
+      "category": "tools",
+      "level": "expert"
+    },
+    {
+      "name": "Linux",
+      "category": "tools",
+      "level": "expert"
+    },
+    {
+      "name": "Vercel",
+      "category": "tools",
+      "level": "advanced"
+    },
+    {
+      "name": "GitHub Actions (CI/CD)",
+      "category": "tools",
+      "level": "advanced"
+    },
+    {
+      "name": "Git & GitHub",
+      "category": "tools",
+      "level": "expert"
+    },
+    {
+      "name": "Database Schema Design",
+      "category": "backend",
+      "level": "expert"
+    },
+    {
+      "name": "Supabase",
+      "category": "backend",
+      "level": "expert"
+    },
+    {
+      "name": "API Integration (REST)",
+      "category": "web",
+      "level": "expert"
+    },
+    {
+      "name": "Bootstrap",
+      "category": "web",
+      "level": "advanced"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "web",
+      "level": "expert"
+    },
+    {
+      "name": "CSS3",
+      "category": "web",
+      "level": "expert"
+    },
+    {
+      "name": "HTML5",
+      "category": "web",
+      "level": "expert"
+    },
+    {
+      "name": "TypeScript",
+      "category": "web",
+      "level": "advanced"
+    },
+    {
+      "name": "JavaScript",
+      "category": "web",
+      "level": "advanced"
+    },
+    {
+      "name": "Vue.js",
+      "category": "web",
+      "level": "advanced"
+    },
+    {
+      "name": "React",
+      "category": "web",
+      "level": "advanced"
+    },
+    {
+      "name": "Android",
+      "category": "mobile",
+      "level": "advanced"
+    },
+    {
+      "name": "Kotlin",
+      "category": "mobile",
+      "level": "advanced"
+    },
+    {
+      "name": "Clean Architecture",
+      "category": "mobile",
+      "level": "expert"
+    },
+    {
+      "name": "Riverpod",
+      "category": "mobile",
+      "level": "advanced"
+    },
+    {
+      "name": "BLoC",
+      "category": "mobile",
+      "level": "expert"
+    },
+    {
+      "name": "GetX",
+      "category": "mobile",
+      "level": "expert"
+    },
+    {
+      "name": "Dart",
+      "category": "mobile",
+      "level": "expert"
+    },
+    {
+      "name": "Flutter",
+      "category": "mobile",
+      "level": "expert"
+    }
+  ],
+  "experiences": [
+    {
+      "company": "Ikavia Digital Nusantara",
+      "position": "Mobile Engineer",
+      "duration": "05/2026 - Present",
+      "description": [
+        "Full-time Mobile Engineer: mengembangkan aplikasi mobile dengan Flutter",
+        "Mengerjakan web dengan vanilla Javascript"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Javascript"
+      ]
+    },
+    {
+      "company": "Berijalan",
+      "position": "Fullstack Javascript Developer (Freelance)",
+      "duration": "12/2025 - Present",
+      "description": [
+        "Mengerjakan project IDMS dari Setir Kanan: aplikasi mobile dengan React Native",
+        "Mengerjakan project ACC Bid dari ACC: fullstack Javascript dan mobile React Native",
+        "Mengerjakan project Teman Seva dari Seva: fullstack Javascript"
+      ],
+      "technologies": [
+        "React Native",
+        "Javascript",
+        "TypeScript",
+        "Next.js"
+      ]
+    },
+    {
+      "company": "Berijalan",
+      "position": "Fullstack Javascript Developer (Internship)",
+      "duration": "09/2025 - 12/2025",
+      "description": [
+        "Mengerjakan project IDMS dari Setir Kanan: aplikasi mobile dengan React Native",
+        "Mempelajari Fullstack JavaScript, Spring Boot & Angular, React Native, serta System Design dan PLSQL",
+        "Terbiasa menggunakan workflow Git dan kolaborasi tim selama masa internship"
+      ],
+      "technologies": [
+        "React Native",
+        "Javascript",
+        "TypeScript",
+        "Spring Boot",
+        "Angular",
+        "System Design",
+        "PLSQL"
+      ]
+    },
+    {
+      "company": "PERMIKOMNAS Wilayah 8 - Yogyakarta",
+      "position": "Bendahara Wilayah",
+      "duration": "2023 - 2024",
+      "description": [
+        "Menangani pengelolaan keuangan organisasi di tingkat wilayah secara transparan dan bertanggung jawab",
+        "Menjadi penanggung jawab atas pelaksanaan program kerja Divisi BPD selama menjabat sebagai bendahara",
+        "Membuat laporan keuangan kegiatan dan memastikan efisiensi penggunaan dana pada berbagai program wilayah",
+        "Mengelola proyek produksi lanyard, ID card, dan jaket PERMIKOMNAS dari tahap perencanaan hingga distribusi"
+      ],
+      "technologies": [
+        "Google Sheets",
+        "Financial Management",
+        "Project Management"
+      ]
+    },
+    {
+      "company": "Bangkit Academy led by Google, GoTo, & Traveloka",
+      "position": "Mobile Development Cohort",
+      "duration": "02/2024 - 07/2024",
+      "description": [
+        "Mengikuti program pelatihan intensif selama 6 bulan dengan fokus pada Mobile Development (Android) menggunakan Kotlin dan Jetpack Compose",
+        "Mendalami konsep software engineering, UI/UX design, dan cloud computing sebagai bagian dari kurikulum interdisipliner",
+        "Mengembangkan proyek akhir berupa aplikasi deteksi penyakit tumbuhan kopi melalui image classification menggunakan teknologi AI",
+        "Berkolaborasi dalam tim multidisiplin (Mobile, Cloud, ML) untuk merancang dan membangun solusi nyata berbasis teknologi",
+        "Lulus sertifikasi internal Bangkit dan mendapatkan pengakuan langsung dari Google & Kampus Merdeka"
+      ],
+      "technologies": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android",
+        "Machine Learning",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "company": "Refactory",
+      "position": "Full Stack Software Engineer (Magang)",
+      "duration": "07/2024 - 05/2025",
+      "description": [
+        "Mengikuti program untuk pengembangan proyek full-stack, mulai dari perencanaan hingga deployment",
+        "Menyusun dokumentasi teknis seperti C4 Model, database schema, dan API contract untuk kebutuhan project",
+        "Mengembangkan aplikasi mobile (Flutter), web (React), dan backend (Supabase dan Raiden) sesuai standar industri",
+        "Mengimplementasikan CI/CD pipeline menggunakan GitHub Actions untuk otomatisasi proses build dan deploy",
+        "Mengimplementasikan praktik software engineering mulai dari penggunaan OOP, algoritma, dan design pattern",
+        "Bekerja sama membuat proyek dengan tim menggunakan tools seperti GitHub dan workboard"
+      ],
+      "technologies": [
+        "Flutter",
+        "React",
+        "Supabase",
+        "GitHub Actions",
+        "Linux",
+        "OOP"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Plasma Token Usage",
+      "description": "Widget KDE Plasma 6 system tray untuk memantau pemakaian token AI coding agent (berbasis ccusage). Ditulis dengan QML untuk desktop Linux.",
+      "technologies": [
+        "QML",
+        "KDE Plasma 6",
+        "Linux"
+      ],
+      "githubUrl": "https://github.com/abuamar142/plasma-tokenusage",
+      "liveUrl": ""
+    },
+    {
+      "title": "LMS Bahasa Arab",
+      "description": "Aplikasi LMS pengganti LKS untuk mata pelajaran Bahasa Arab kelas 7. Dibangun dengan Flutter dan GetX: materi markdown, file picker, dan penyimpanan lokal.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "GetX",
+        "Android"
+      ],
+      "githubUrl": "https://github.com/abuamar142/lms",
+      "liveUrl": ""
+    },
+    {
+      "title": "Warloc - Chat Backup Viewer",
+      "description": "WhatsApp dan Telegram chat backup and viewer untuk Android. Dibangun dengan Flutter: sqflite untuk penyimpanan lokal, file picker dan archive untuk impor backup, plus pemutar media.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "sqflite",
+        "Android"
+      ],
+      "githubUrl": "https://github.com/abuamar142/warloc",
+      "liveUrl": ""
+    },
+    {
+      "title": "Hafalan - Quran Tracker",
+      "description": "Hafalan Quran Tracker: catat hafalan dan setoran santri. Dibangun dengan Next.js, Supabase, dan TanStack Query, live di Vercel.",
+      "technologies": [
+        "TypeScript",
+        "Next.js",
+        "Supabase",
+        "TanStack Query",
+        "Tailwind CSS"
+      ],
+      "githubUrl": "https://github.com/abuamar142/hafalan",
+      "liveUrl": "https://hafalan-delta.vercel.app"
+    },
+    {
+      "title": "Tambangan - Perahu Tracker",
+      "description": "Aplikasi pelacakan perahu tambangan real-time. Live di tambangan.abuamar.online dengan stack TypeScript, Next.js, Drizzle ORM, dan PostgreSQL.",
+      "technologies": [
+        "TypeScript",
+        "Next.js",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "githubUrl": "https://github.com/abuamar142/tambangan",
+      "liveUrl": ""
+    },
+    {
+      "title": "Liat Menu - Restaurant Platform",
+      "description": "Platform web modern untuk discovery warung dan restoran menggunakan Next.js dan Supabase. Fitur pencarian, filter kategori, review sistem, autentikasi pengguna, dashboard admin, dan responsive design. Dilengkapi dengan dark/light mode dan real-time data.",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Tailwind CSS",
+        "shadcn/ui"
+      ],
+      "githubUrl": "",
+      "liveUrl": ""
+    },
+    {
+      "title": "MonkeyType CLI",
+      "description": "Aplikasi command-line interface berbasis Python untuk latihan typing speed test. Dioptimalkan khusus untuk Windows dengan interface yang user-friendly dan tracking progress untuk meningkatkan kecepatan dan akurasi mengetik.",
+      "technologies": [
+        "Python",
+        "CLI",
+        "Windows Optimization",
+        "Performance Tracking"
+      ],
+      "githubUrl": "https://github.com/abuamar142/monkeytype-cli",
+      "liveUrl": ""
+    },
+    {
+      "title": "N8N Local Automation Setup",
+      "description": "Setup Docker-based N8N workflow automation dengan konfigurasi Ngrok untuk tunneling lokal. Menyediakan environment automation lengkap untuk development dan testing workflow dengan akses eksternal yang aman.",
+      "technologies": [
+        "Docker",
+        "N8N",
+        "Ngrok",
+        "Workflow Automation",
+        "Shell Scripts"
+      ],
+      "githubUrl": "https://github.com/abuamar142/n8n-local",
+      "liveUrl": ""
+    },
+    {
+      "title": "Agenda - Google Calendar Manager",
+      "description": "Aplikasi Flutter manajemen agenda terintegrasi dengan Google Calendar. Menggunakan Supabase OAuth untuk autentikasi, GetX untuk state management, dan clean architecture. Memungkinkan sinkronisasi seamless dengan Google Calendar untuk pengelolaan jadwal yang efektif.",
+      "technologies": [
+        "Flutter",
+        "Google Calendar API",
+        "Supabase",
+        "GetX",
+        "Clean Architecture"
+      ],
+      "githubUrl": "https://github.com/abuamar142/agenda",
+      "liveUrl": ""
+    },
+    {
+      "title": "Inget - Note Taking App",
+      "description": "Aplikasi pencatatan modern berbasis Flutter dengan state management Riverpod. Fitur offline storage, Material Design yang clean, dan interface yang intuitif untuk produktivitas maksimal dalam mencatat dan mengorganisir informasi.",
+      "technologies": [
+        "Flutter",
+        "Riverpod",
+        "Material Design",
+        "Offline Storage",
+        "State Management"
+      ],
+      "githubUrl": "https://github.com/abuamar142/inget",
+      "liveUrl": ""
+    },
+    {
+      "title": "My SADARI - Breast Self-Examination App",
+      "description": "Aplikasi Flutter untuk edukasi dan pengingat pemeriksaan payudara sendiri (SADARI). Dilengkapi dengan fitur notifikasi terjadwal, kuesioner penilaian, tutorial step-by-step, dan sistem autentikasi. Membantu meningkatkan awareness kesehatan wanita untuk deteksi dini kanker payudara.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Local Notifications",
+        "Authentication"
+      ],
+      "githubUrl": "",
+      "liveUrl": ""
+    },
+    {
+      "title": "Cashier App",
+      "description": "Aplikasi kasir (Point of Sale) berbasis Flutter untuk manajemen penjualan, pembelian, inventori, dan laporan keuangan. Dilengkapi dengan fitur draft penjualan, manajemen produk, supplier, dan sistem autentikasi pengguna.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "GetX",
+        "REST API",
+        "Database Management"
+      ],
+      "githubUrl": "",
+      "liveUrl": ""
+    },
+    {
+      "title": "Pondok Pesantren Asy-Syaikhoni",
+      "description": "Website landing page modern dan elegan untuk Pondok Pesantren Tahfidzul Qur'an Asy-Syaikhoni di Nganjuk, Jawa Timur. Dibangun dengan desain islami menggunakan Vue.js 3 dan Tailwind CSS v4.",
+      "technologies": [
+        "Vue.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "SEO Optimization",
+        "Vercel"
+      ],
+      "githubUrl": "https://github.com/abuamar142/asyaikhoni",
+      "liveUrl": "https://asyaikhoni.abuamar.online"
+    },
+    {
+      "title": "JNE Landing Page",
+      "description": "Landing page modern dan responsif untuk JNE Express - perusahaan ekspedisi pengiriman barang terpercaya di Indonesia.",
+      "technologies": [
+        "Vue.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "SEO Optimization",
+        "Vercel"
+      ],
+      "githubUrl": "https://github.com/abuamar142/jne-landing-page",
+      "liveUrl": ""
+    },
+    {
+      "title": "Coffee Plant Disease Detection App",
+      "description": "Aplikasi mobile untuk deteksi penyakit tumbuhan kopi menggunakan image classification dan machine learning. Dikembangkan sebagai proyek akhir Bangkit Academy dengan kolaborasi tim multidisiplin.",
+      "technologies": [
+        "Kotlin",
+        "Jetpack Compose",
+        "TensorFlow",
+        "Android",
+        "Machine Learning"
+      ],
+      "githubUrl": "https://github.com/abuamar142/coffeeClassifier",
+      "liveUrl": ""
+    },
+    {
+      "title": "Mobile Londri",
+      "description": "Aplikasi mobile manajemen laundry berbasis Flutter dan Supabase. Mendukung fitur pesanan, pelanggan, laporan keuangan, dan autentikasi pengguna.",
+      "technologies": [
+        "Flutter",
+        "Supabase",
+        "Dart",
+        "PostgreSQL"
+      ],
+      "githubUrl": "",
+      "liveUrl": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universitas Jenderal Achmad Yani Yogyakarta",
+      "degree": "Sarjana (S1)",
+      "field": "Informatika",
+      "duration": "2021 - 2025",
+      "gpa": "3.90"
+    },
+    {
+      "institution": "Pondok Pesantren Al-Munawwir Krapyak",
+      "degree": "Pendidikan Agama",
+      "field": "Komplek Madrasah Huffadh 2",
+      "duration": "2021 - Saat ini",
+      "gpa": ""
+    },
+    {
+      "institution": "Pondok Pesantren Al-Munawwir Krapyak",
+      "degree": "Pendidikan Agama",
+      "field": "Komplek Madrasah Huffadh 2",
+      "duration": "2021 - 2024",
+      "gpa": ""
+    },
+    {
+      "institution": "MAN 2 Kabupaten Kediri",
+      "degree": "SMA",
+      "field": "Kelas PDCI (Peserta Didik Cerdas Istimewa)",
+      "duration": "2017 - 2019",
+      "gpa": "Lulus 2 tahun"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "051566cd-9c3f-4cd8-b8ea-36dcda2ab5d0",
+      "title": "Perbaikan plugin Portctl: kolom pencarian tidak bisa diketik",
+      "organizer": "Noctalia / community-plugins (MIT)",
+      "date": "2026-10-18",
+      "type": "contribution",
+      "file_key": "",
+      "file_name": null,
+      "file_size": null,
+      "certificate_number": "PR #1031",
+      "participant_as": "Kontributor",
+      "description": "Memperbaiki bug pada plugin Portctl milik kontributor lain (rxtsel), yang menampilkan daftar port listening tapi kolom pencariannya sama sekali tidak bisa diketik — sehingga daftar tidak bisa difilter berdasarkan port, nama proses, atau PID, padahal itu interaksi utama panel tersebut.\n\nAkar masalahnya: ui.input dideklarasikan tanpa value dan tanpa focus, berbeda dari semua plugin lain di repo yang punya input teks (file-search, qrcode, keybind-cheatsheet semuanya mengisi keduanya). Tanpa focus panel tidak pernah mengambil keyboard saat dibuka, sehingga ketikan tidak sampai ke field dan onSearchChange tidak pernah dipanggil.\n\nPerbaikannya dua properti; ukuran panel dan lebar input tidak berubah. Digabung lewat PR #1031.\n\nhttps://github.com/noctalia-dev/community-plugins/pull/1031",
+      "valid_until": null,
+      "order_index": -4,
+      "created_at": "2026-10-22T06:53:38.947558Z"
+    },
+    {
+      "id": "b97e5c60-5cb0-4f38-b03c-de1cf7d50701",
+      "title": "Plugin Noctalia: QR Share untuk Wi-Fi dan clipboard",
+      "organizer": "Noctalia / community-plugins (MIT)",
+      "date": "2026-10-12",
+      "type": "contribution",
+      "file_key": "",
+      "file_name": null,
+      "file_size": null,
+      "certificate_number": "PR #987",
+      "participant_as": "Kontributor",
+      "description": "Menulis plugin panel untuk Noctalia (shell Wayland) yang menampilkan QR code untuk jaringan Wi-Fi aktif dan untuk isi clipboard, dalam satu panel dua tab. Tab Wi-Fi membaca SSID dan PSK dari NetworkManager lalu merender QR standar WIFI: sehingga ponsel bisa langsung bergabung tanpa mengetik password; tab Clipboard mengubah teks apa pun jadi QR untuk dipindah ke ponsel tanpa aplikasi transfer.\n\nDiterima ke katalog resmi lewat PR #987 (648 baris). Sengaja tanpa service polling: guard CPU-budget Noctalia mematikan runtime plugin secara diam-diam, jadi semua kerja terjadi di callback runAsync saat pengguna bertindak. PNG QR ditulis ke $XDG_RUNTIME_DIR (0700 tmpfs) dan dihapus saat panel ditutup, karena QR Wi-Fi memuat password dalam bentuk teks.\n\nhttps://github.com/noctalia-dev/community-plugins/tree/main/qr-share\nhttps://github.com/noctalia-dev/community-plugins/pull/987",
+      "valid_until": null,
+      "order_index": -3,
+      "created_at": "2026-10-22T06:53:38.947558Z"
+    },
+    {
+      "id": "fa173c95-a3bd-49f0-b932-86414ec55c4c",
+      "title": "Kontribusi driver fingerprint ELAN untuk libfprint",
+      "organizer": "freedesktop.org / libfprint (LGPL-2.1)",
+      "date": "2026-10-22",
+      "type": "contribution",
+      "file_key": "",
+      "file_name": null,
+      "file_size": null,
+      "certificate_number": "Issue #621",
+      "participant_as": "Kontributor",
+      "description": "Membuat sensor fingerprint ELAN 04f3:0c00 (ELAN:ARM-M4) berfungsi di Linux. Sensor ini tidak ada di tabel driver libfprint resmi, jadi saya mem-porting driver elanmoc2 karya Davide Depau ke libfprint 1.94.100, memperbaiki dua data test yang gagal begitu driver ditambahkan, lalu memaketkannya untuk Arch. Terverifikasi di hardware: enroll, verify, unlock lock screen, dan login lewat greetd.\n\nSaya juga mengukur bahwa firmware 0283 menerima paket enroll 6 maupun 7 byte, dan melaporkan seluruh temuannya ke issue upstream.\n\nhttps://github.com/abuamar142/libfprint-elanmoc2\nhttps://gitlab.freedesktop.org/libfprint/libfprint/-/issues/621#note_3729350",
+      "valid_until": null,
+      "order_index": -2,
+      "created_at": "2026-10-22T06:18:30.228935Z"
+    },
+    {
+      "id": "57c362b5-8874-4025-be0b-896956dad2ad",
+      "title": "Kontribusi fitur duplikat habit",
+      "organizer": "InlitX / Streak (635 bintang, GPL-3.0)",
+      "date": "2026-09-26",
+      "type": "contribution",
+      "file_key": "",
+      "file_name": null,
+      "file_size": null,
+      "certificate_number": "PR #230",
+      "participant_as": "Kontributor",
+      "description": "Menyumbang fitur duplikat habit ke Streak, habit tracker open source (635 bintang) yang dirilis lewat F-Droid dan GitHub Releases. Saya menulis issue usulannya lebih dulu, membangun fiturnya di Flutter mengikuti konvensi repo beserta test-nya, lalu menyerahkan pull request. Maintainer menyetujui dan merilisnya di versi 2.1.0 dengan nama saya di catatan rilis.\n\nhttps://github.com/InlitX/streak/pull/230\nhttps://github.com/InlitX/streak/releases/tag/v2.1.0",
+      "valid_until": null,
+      "order_index": -1,
+      "created_at": "2026-09-29T07:44:27.437286Z"
+    },
+    {
+      "id": "c252cb19-97a9-4256-9e00-41ed244faa84",
+      "title": "Belajar Fundamental Aplikasi Android",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-03-28",
+      "type": "certificate",
+      "file_key": "certificates/10FU3FL7_uLP_vBzm41QxdwI6Y9yWhyrz.pdf",
+      "file_name": "belajar-fundamental-aplikasi-android.pdf",
+      "file_size": 927508,
+      "certificate_number": "53XEYVY4YPRN",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-03-28",
+      "order_index": 0,
+      "created_at": "2025-08-03T01:55:28.276Z"
+    },
+    {
+      "id": "492fa3e8-4e9d-4093-b966-e69df2bdb24c",
+      "title": "Belajar Dasar Git dengan GitHub",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-03-06",
+      "type": "certificate",
+      "file_key": "certificates/16kgtgCMvOn5PzVopU82n6JqR86XVir_-.pdf",
+      "file_name": "belajar-dasar-git-dengan-github.pdf",
+      "file_size": 924221,
+      "certificate_number": "MRZM818WNZYQ",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-03-06",
+      "order_index": 1,
+      "created_at": "2025-08-03T01:55:28.379Z"
+    },
+    {
+      "id": "6d0677e0-f506-42e8-99ca-09cee25ead08",
+      "title": "Kepanitiaan Permikomnas Festival 2022",
+      "organizer": "Permikomnas Wilayah XIII Yogyakarta",
+      "date": "2022-11-26",
+      "type": "seminar",
+      "file_key": "certificates/1BT0IktahCWY7bSKXePxyK4Lpt3Bjdjld.pdf",
+      "file_name": "kepanitiaan-permikomnas-festival-2022.pdf",
+      "file_size": 892641,
+      "certificate_number": "13/237/PERMIKOMNASYK/XI/2022",
+      "participant_as": "Anggota Divisi Perlengkapan",
+      "description": "None",
+      "valid_until": null,
+      "order_index": 2,
+      "created_at": "2025-08-03T01:55:28.48Z"
+    },
+    {
+      "id": "17434468-4038-4ca9-985c-d055ecc1bc2d",
+      "title": "Tips & Trik Buat Aplikasi Tanpa Coding",
+      "organizer": "Devcode AI Talks",
+      "date": "2025-03-08",
+      "type": "webinar",
+      "file_key": "certificates/1r1AjC0_RfF058luxQwFsi6KH4Ez5ecci.pdf",
+      "file_name": "tips-trik-buat-aplikasi-tanpa-coding.pdf",
+      "file_size": 375682,
+      "certificate_number": "026/AIT-DEV/III/25",
+      "participant_as": "Participant",
+      "description": "No-Code & AI",
+      "valid_until": null,
+      "order_index": 3,
+      "created_at": "2025-08-03T01:55:28.504Z"
+    },
+    {
+      "id": "f3bed837-d99b-4099-b8ef-8c43c10d9f40",
+      "title": "Melihat Dunia dengan AI : Eksplorasi Computer Vision",
+      "organizer": "Dicoding Event",
+      "date": "2024-07-19",
+      "type": "webinar",
+      "file_key": "certificates/1PzJCEZmTU0-V5yDQvD3cPzs6ADzqVTq2.pdf",
+      "file_name": "melihat-dunia-dengan-ai-eksplorasi-computer-vision.pdf",
+      "file_size": 152442,
+      "certificate_number": "None",
+      "participant_as": "Peserta",
+      "description": "DevCoach 160 : Machine Learning",
+      "valid_until": null,
+      "order_index": 4,
+      "created_at": "2025-08-03T01:55:28.583Z"
+    },
+    {
+      "id": "a5cb9b7c-0e92-4964-8885-133f2a3f66e1",
+      "title": "Kepanitiaan Permikomnas Festival 2023",
+      "organizer": "Permikomnas Wilayah XIII Yogyakarta",
+      "date": "2023-10-01",
+      "type": "seminar",
+      "file_key": "certificates/1DoisKRbgPGs_z2Au02e23c4wuq9W9jJW.pdf",
+      "file_name": "kepanitiaan-permikomnas-festival-2023.pdf",
+      "file_size": 1198418,
+      "certificate_number": "016/FST/UPY/X/2023",
+      "participant_as": "Panitia",
+      "description": "Seminar Nasional berlokasi di Universitas PGRI Yogyakarta (UPY)",
+      "valid_until": null,
+      "order_index": 5,
+      "created_at": "2025-08-03T01:55:28.606Z"
+    },
+    {
+      "id": "c7b3129b-3113-48e5-b173-7e200d816146",
+      "title": "English for Business Communication",
+      "organizer": "The British Institute | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-07-12",
+      "type": "certificate",
+      "file_key": "certificates/1PdN0LT49jqUlbx9425gnfwM0TqsNbUJo.pdf",
+      "file_name": "english-for-business-communication.pdf",
+      "file_size": 1026241,
+      "certificate_number": "TBI-DAGO/CORP/9957",
+      "participant_as": "None",
+      "description": "Completed a short course and achieved an overall score of 76%",
+      "valid_until": null,
+      "order_index": 6,
+      "created_at": "2025-08-03T01:55:28.686Z"
+    },
+    {
+      "id": "04916fa9-2729-4b3c-b80c-8cd8065d60e6",
+      "title": "Belajar Dasar AI",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-04-11",
+      "type": "certificate",
+      "file_key": "certificates/1vlI6MuiOJ-BTU458rsU9a4j3C7M0ZcvU.pdf",
+      "file_name": "belajar-dasar-ai.pdf",
+      "file_size": 935269,
+      "certificate_number": "07Z60LWRJZQR",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-04-11",
+      "order_index": 7,
+      "created_at": "2025-08-03T01:55:28.71Z"
+    },
+    {
+      "id": "f9cb8f69-5071-4602-a09c-b10d077d11fb",
+      "title": "Cybersecurity & Artificial Intelligence : Towards an Epoch of Digital Vigilance",
+      "organizer": "Permikomnas Wilayah XIII Yogyakarta",
+      "date": "2023-10-01",
+      "type": "seminar",
+      "file_key": "certificates/1IwSJUDryd9EuqM-tAseItGenq4ptNa9H.pdf",
+      "file_name": "cybersecurity-artificial-intelligence-towards-an-epoch-of-digital-vigilance.pdf",
+      "file_size": 1345184,
+      "certificate_number": "015/FST/UPY/X/2023",
+      "participant_as": "Peserta",
+      "description": "Seminar Nasional berlokasi di Universitas PGRI Yogyakarta (UPY)",
+      "valid_until": null,
+      "order_index": 8,
+      "created_at": "2025-08-03T01:55:28.74Z"
+    },
+    {
+      "id": "2e8a834a-1987-47f2-9dd5-5ffa04920f1d",
+      "title": "Pelatihan Literasi Digital, Finansial, & Dampak Sosial",
+      "organizer": "Digital & Financial Literacy Festival collaborates with Traveloka",
+      "date": "2022-12-03",
+      "type": "certificate",
+      "file_key": "certificates/12cma6oqNkJXmIq3KQwgad-37BPgZES-W.pdf",
+      "file_name": "pelatihan-literasi-digital-finansial-dampak-sosial.pdf",
+      "file_size": 195554,
+      "certificate_number": "606/TRVD/XII/2022",
+      "participant_as": "Peserta",
+      "description": "Bertempat di Dinas Koperasi & UMKM DIY",
+      "valid_until": null,
+      "order_index": 9,
+      "created_at": "2025-08-03T01:55:28.788Z"
+    },
+    {
+      "id": "635f3204-e89f-48a0-a855-ff0063317500",
+      "title": "Sertifikat Kepengurusan Permikomnas Wilayah VIII Yogyakarta",
+      "organizer": "Permikomnas Wilayah VIII Yogyakarta",
+      "date": "2024-12-31",
+      "type": "certificate",
+      "file_key": "certificates/1ZkZF1Y2jkAHfOLW7MeL2lbq6g138Rf_7.pdf",
+      "file_name": "sertifikat-kepengurusan-permikomnas-wilayah-viii-yogyakarta.pdf",
+      "file_size": 853197,
+      "certificate_number": "067/SERT.e/K8-PERMIKOMNAS/V/2024",
+      "participant_as": "Bendahara Wilayah",
+      "description": "Dalam satu periode kepengurusan dengan masa periode 2023 - 2024",
+      "valid_until": null,
+      "order_index": 10,
+      "created_at": "2025-08-03T01:55:28.81Z"
+    },
+    {
+      "id": "4bc25143-170f-44f0-adf8-ebd5e8185439",
+      "title": "Membuat Mobile Aplikasi dengan Efisien dan Cepat",
+      "organizer": "HMIF UNJAYA",
+      "date": "2025-02-22",
+      "type": "certificate",
+      "file_key": "certificates/10_K4se5WiVm4IzBy2mk812gn49BhtiXN.pdf",
+      "file_name": "membuat-mobile-aplikasi-dengan-efisien-dan-cepat.pdf",
+      "file_size": 753036,
+      "certificate_number": "S/01/HMIF.UNJAYA/02/2025",
+      "participant_as": "Peserta",
+      "description": "Workshop HMIF 2025",
+      "valid_until": null,
+      "order_index": 11,
+      "created_at": "2025-08-03T01:55:28.893Z"
+    },
+    {
+      "id": "44d2bb0a-bdbc-406b-a938-402530af2c5a",
+      "title": "Sertifikat Kepengurusan Permikomnas Wilayah VIII Yogyakarta",
+      "organizer": "Permikomnas Wilayah VIII Yogyakarta",
+      "date": "2023-03-20",
+      "type": "certificate",
+      "file_key": "certificates/1BoPMX74S3Ptv-uwFBn2zBf00Dx6dDBAR.pdf",
+      "file_name": "sertifikat-kepengurusan-permikomnas-wilayah-viii-yogyakarta.pdf",
+      "file_size": 122728,
+      "certificate_number": "13/142/PERMIKOMNASYK/III/2023",
+      "participant_as": "Anggota Divisi Bisnis, Pemasaran, dan Distribusi",
+      "description": "Dalam satu periode kepengurusan dengan masa periode 2021 - 2022",
+      "valid_until": null,
+      "order_index": 12,
+      "created_at": "2025-08-03T01:55:28.918Z"
+    },
+    {
+      "id": "cdaf37da-bc4e-4de7-b6f0-e037078582cd",
+      "title": "Graduation Certificate - Bangkit 2024 (Mobile Development - Android)",
+      "organizer": "Bangkit by Google, in collaboration with GoTo, Tokopedia, Traveloka",
+      "date": "2024-07-10",
+      "type": "certificate",
+      "file_key": "certificates/1Qq23JBni7tGN-q9FZ9W5s2vOEBBQQSJ8.pdf",
+      "file_name": "graduation-certificate-bangkit-2024-mobile-development-android-.pdf",
+      "file_size": 1219705,
+      "certificate_number": "BA24/GRAD/XXIV-07/A228D4KY3895",
+      "participant_as": "Student",
+      "description": "This certificate confirms that the participant has successfully graduated from Bangkit 2024 Batch 1, following the Mobile Development (Android) learning path",
+      "valid_until": null,
+      "order_index": 13,
+      "created_at": "2025-08-03T01:55:28.993Z"
+    },
+    {
+      "id": "948054d7-28af-4d27-9f9c-6ab232a4436b",
+      "title": "Memulai Pemrograman dengan Kotlin",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-02-28",
+      "type": "certificate",
+      "file_key": "certificates/1vAN-TOthSKQO9muxv80KWzvobYuAt-UY.pdf",
+      "file_name": "memulai-pemrograman-dengan-kotlin.pdf",
+      "file_size": 927264,
+      "certificate_number": "L4PQQL6V4PO1",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-02-28",
+      "order_index": 14,
+      "created_at": "2025-08-03T01:55:29.018Z"
+    },
+    {
+      "id": "adcefb2c-c61a-4d81-a58a-791cfce55b5c",
+      "title": "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-02-21",
+      "type": "certificate",
+      "file_key": "certificates/1wuRg5fiulMKw-WU5RojbDAq475vGBt8_.pdf",
+      "file_name": "memulai-dasar-pemrograman-untuk-menjadi-pengembang-software.pdf",
+      "file_size": 539613,
+      "certificate_number": "MRZMELJDKPYQ",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-02-21",
+      "order_index": 15,
+      "created_at": "2025-08-03T01:55:29.096Z"
+    },
+    {
+      "id": "24fa3389-06a1-41d7-a0b0-50c913b7fc77",
+      "title": "Belajar Prinsip Pemrograman SOLID",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-04-07",
+      "type": "certificate",
+      "file_key": "certificates/1LhEQdIZVcWGavXdOuq_Wzuyw9lgGPQf0.pdf",
+      "file_name": "belajar-prinsip-pemrograman-solid.pdf",
+      "file_size": 920438,
+      "certificate_number": "GRX5ONVL3P0M",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-04-07",
+      "order_index": 16,
+      "created_at": "2025-08-03T01:55:29.12Z"
+    },
+    {
+      "id": "fa964a72-1066-4e18-87af-2b0f9d98f859",
+      "title": "Belajar Pengembangan Aplikasi Android Intermediate",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-05-31",
+      "type": "certificate",
+      "file_key": "certificates/1pACgV-jjnvt2X2IAPuLz3CO77dTZhBQ2.pdf",
+      "file_name": "belajar-pengembangan-aplikasi-android-intermediate.pdf",
+      "file_size": 927860,
+      "certificate_number": "4EXGQ794DZRL",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-05-31",
+      "order_index": 17,
+      "created_at": "2025-08-03T01:55:29.198Z"
+    },
+    {
+      "id": "59493d68-8ec3-4739-8d41-d39cc543ddb3",
+      "title": "Belajar Penerapan Machine Learning untuk Android",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-04-25",
+      "type": "certificate",
+      "file_key": "certificates/193ESxFL96Fk6dBF8l53jQYklrxb-MxgR.pdf",
+      "file_name": "belajar-penerapan-machine-learning-untuk-android.pdf",
+      "file_size": 927202,
+      "certificate_number": "4EXGQ794DZRL",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-04-25",
+      "order_index": 18,
+      "created_at": "2025-08-03T01:55:29.22Z"
+    },
+    {
+      "id": "48bc20db-4f32-4c07-965f-89e3ebd04b14",
+      "title": "Belajar Membuat Aplikasi Android untuk Pemula",
+      "organizer": "Dicoding | Bangkit collaborates with Google, Tokopedia, and Traveloka",
+      "date": "2024-03-05",
+      "type": "certificate",
+      "file_key": "certificates/155xRT6enJEu9oKkQI9wrbRn3-ugi0vFt.pdf",
+      "file_name": "belajar-membuat-aplikasi-android-untuk-pemula.pdf",
+      "file_size": 926508,
+      "certificate_number": "MRZM81DENZYQ",
+      "participant_as": "None",
+      "description": "Kelulusan kelas",
+      "valid_until": "2027-03-05",
+      "order_index": 19,
+      "created_at": "2025-08-03T01:55:29.244Z"
+    }
+  ],
+  "releases": [
+    {
+      "repo": "warloc",
+      "tag": "v1.0.0",
+      "publishedAt": "2026-09-15T09:51:41Z"
+    },
+    {
+      "repo": "kanzoo",
+      "tag": "v1.2.0",
+      "publishedAt": "2025-09-02T02:06:57Z"
+    }
+  ]
+}

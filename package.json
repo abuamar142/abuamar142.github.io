@@ -1,0 +1,29 @@
+{
+  "name": "abuamar-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "snapshot": "bun scripts/fetch-snapshot.ts",
+    "linkcheck": "bun scripts/link-check.ts"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "@fontsource-variable/source-serif-4": "^5.3.1",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.4",
+    "astro": "^7",
+    "tailwindcss": "^4.3.4",
+    "typescript": "^6"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "@types/node": "^26.6.6"
+  }
+}

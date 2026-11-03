@@ -1,0 +1,195 @@
+---
+import '../styles/global.css'
+import id from '../i18n/id'
+import en from '../i18n/en'
+
+interface Props {
+  lang: 'id' | 'en'
+  title: string
+  description: string
+  canonical: string
+  alternates: Array<{ hreflang: string; href: string }>
+  /** JSON-LD graph, serialized by the page that owns the data. */
+  jsonLd?: string
+}
+
+const { lang, title, description, canonical, alternates, jsonLd } = Astro.props
+const t = lang === 'en' ? en : id
+const other = lang === 'en' ? { href: '/', label: 'ID' } : { href: '/en/', label: 'EN' }
+
+const noscriptLinks = [
+  { href: 'https://abuamar.online', label: lang === 'en' ? 'Full portfolio' : 'Portofolio lengkap' },
+  { href: 'https://abuamar.online/cv.pdf', label: 'CV (PDF)' },
+  { href: 'https://github.com/abuamar142', label: 'GitHub' },
+  { href: 'https://abuamar.online/blogs', label: lang === 'en' ? 'Writing' : 'Tulisan' },
+  { href: 'mailto:abuamar.albadawi@gmail.com', label: 'abuamar.albadawi@gmail.com' },
+]
+---
+
+<!doctype html>
+<html lang={lang} data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {alternates.map((alt) => <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />)}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#f3f4ef" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${Astro.site}og.png`} />
+    <meta property="og:locale" content={lang === 'id' ? 'id_ID' : 'en_US'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {jsonLd && <script type="application/ld+json" is:inline set:html={jsonLd} />}
+
+    <!-- Paint the stored theme before first paint. Without this a dark-theme
+         visitor sees a cream flash on every navigation. A storage failure
+         (Brave throws on some back-navigations) falls through to the OS
+         preference instead of aborting the whole apply. -->
+    <script is:inline>
+      ;(function () {
+        var mode = 'system'
+        try {
+          var stored = localStorage.getItem('hub-theme')
+          if (stored === 'light' || stored === 'dark' || stored === 'system') mode = stored
+        } catch (e) {}
+        var dark =
+          mode === 'dark' ||
+          (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+      })()
+    </script>
+  </head>
+
+  <body>
+    <a
+      href="#main-content"
+      class="label sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:px-4 focus:py-2"
+      >{t.skipToContent}</a
+    >
+
+    <header class="sticky top-0 z-40 border-b border-hairline bg-cream/95 backdrop-blur-sm">
+      <div class="mx-auto flex min-h-14 max-w-[90rem] items-center justify-between gap-4 px-5 md:px-8">
+        <a href={lang === 'en' ? '/en/' : '/'} class="flex min-h-11 items-center gap-2 no-underline">
+          <span class="label text-ink">M. Abu Amar</span>
+        </a>
+
+        <nav aria-label="Primary" class="hidden items-center gap-6 lg:flex">
+          <a href="#gateway" class="label no-underline transition-colors hover:text-terracotta">{t.gatewayKicker.split(' / ')[1]}</a>
+          <a href="#projects" class="label no-underline transition-colors hover:text-terracotta">{t.projectsKicker.split(' / ')[1]}</a>
+          <a href="#contributions" class="label no-underline transition-colors hover:text-terracotta">{t.contributionsKicker.split(' / ')[1]}</a>
+          <a href="#contact" class="label no-underline transition-colors hover:text-terracotta">{t.contactKicker.split(' / ')[1]}</a>
+        </nav>
+
+        <div class="flex items-center gap-1">
+          <a
+            href={other.href}
+            class="label flex min-h-11 min-w-11 items-center justify-center no-underline transition-colors hover:text-terracotta"
+            aria-label={t.languageToggle}
+            >{other.label}</a
+          >
+          <button
+            type="button"
+            data-theme-toggle
+            class="flex min-h-11 min-w-11 items-center justify-center text-ink-3 transition-colors hover:text-terracotta"
+            aria-label={t.themeToggle}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <!--
+      No-JS readers and crawlers that do not execute scripts. The visible page
+      already renders the committed snapshot, so this is a compact restatement
+      rather than the only copy of the content: name, role, project links,
+      contact. Kept in sync with the page by the same data import.
+    -->
+    <noscript>
+      <div class="mx-auto max-w-[90rem] border-t border-hairline px-5 py-8 md:px-8">
+        <h2 class="display-sub">M. Abu Amar Al Badawi, S.Kom</h2>
+        <p class="prose-body mt-2">{t.metaDescription}</p>
+        <ul class="mt-4 flex flex-col gap-2">
+          {
+            noscriptLinks.map((link) => (
+              <li>
+                <a class="action-link" href={link.href}>
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </noscript>
+
+    <footer class="mt-0 bg-colophon text-cream">
+      <div class="mx-auto grid max-w-[90rem] gap-10 px-5 py-12 md:grid-cols-[1.6fr_1fr_1fr] md:px-8">
+        <div class="flex flex-col gap-3">
+          <span class="label text-cream/60">M. Abu Amar Al Badawi, S.Kom</span>
+          <p class="prose-body text-[0.9375rem] text-cream/80">{t.footerNote}</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <span class="label text-cream/60">Links</span>
+          <a class="text-[0.9375rem] text-cream/85 no-underline hover:text-cream" href="https://abuamar.online">{t.footerPortfolio}</a>
+          <a class="text-[0.9375rem] text-cream/85 no-underline hover:text-cream" href="https://github.com/abuamar142">GitHub</a>
+          <a class="text-[0.9375rem] text-cream/85 no-underline hover:text-cream" href="https://linkedin.com/in/abu-amar">{t.footerLinkedin}</a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <span class="label text-cream/60">Contact</span>
+          <a class="text-[0.9375rem] text-cream/85 no-underline hover:text-cream" href="mailto:abuamar.albadawi@gmail.com">abuamar.albadawi@gmail.com</a>
+          <a class="text-[0.9375rem] text-cream/85 no-underline hover:text-cream" href="https://wa.me/6285117692402">+62 851-1769-2402</a>
+          <a class="text-[0.9375rem] text-cream/85 no-underline hover:text-cream" href="https://instagram.com/abuuamar_">{t.footerInstagram}</a>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      // Theme toggle: three states (light → dark → system), persisted. The
+      // stored value drives the prepaint script in <head>.
+      ;(function () {
+        var root = document.documentElement
+        var button = document.querySelector('[data-theme-toggle]')
+        if (!button) return
+        var media = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function read() {
+          try {
+            return localStorage.getItem('hub-theme') || 'system'
+          } catch (e) {
+            return 'system'
+          }
+        }
+        function apply(mode) {
+          var dark = mode === 'dark' || (mode === 'system' && media.matches)
+          root.dataset.theme = dark ? 'dark' : 'light'
+        }
+        button.addEventListener('click', function () {
+          var next = read() === 'light' ? 'dark' : read() === 'dark' ? 'system' : 'light'
+          try {
+            localStorage.setItem('hub-theme', next)
+          } catch (e) {}
+          apply(next)
+          button.setAttribute('data-mode', next)
+        })
+        media.addEventListener('change', function () {
+          if (read() === 'system') apply('system')
+        })
+        apply(read())
+      })()
+    </script>
+  </body>
+</html>

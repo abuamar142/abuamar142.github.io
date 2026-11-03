@@ -1,0 +1,254 @@
+---
+import type { Snapshot } from '../data/types'
+import type { Locale } from '../render/sections'
+import {
+  renderBio,
+  renderProjects,
+  renderContributions,
+  renderSkills,
+  renderStats,
+  renderContact,
+} from '../render/sections'
+
+interface Props {
+  data: Snapshot
+  t: Locale
+  lang: 'id' | 'en'
+}
+
+const { data, t, lang } = Astro.props
+const { personalInfo, projects, skills, achievements, experiences, releases } = data
+
+const releaseMap = new Map(releases.map((release) => [release.repo, release.tag]))
+const portfolioUrl = 'https://abuamar.online'
+const toolsUrl = 'https://abuamar.online/explore'
+const blogUrl = 'https://abuamar.online/blogs'
+
+const gateway = [
+  {
+    index: '01',
+    title: t.gatewayPortfolioTitle,
+    dek: t.gatewayPortfolioDek,
+    href: portfolioUrl,
+    action: t.gatewayPortfolioAction,
+  },
+  {
+    index: '02',
+    title: t.gatewayBlogTitle,
+    dek: t.gatewayBlogDek,
+    href: blogUrl,
+    action: t.gatewayBlogAction,
+  },
+  {
+    index: '03',
+    title: t.gatewayGithubTitle,
+    dek: t.gatewayGithubDek,
+    href: 'https://github.com/abuamar142',
+    action: t.gatewayGithubAction,
+  },
+  {
+    index: '04',
+    title: t.gatewayToolsTitle,
+    dek: t.gatewayToolsDek,
+    href: toolsUrl,
+    action: t.gatewayToolsAction,
+  },
+]
+
+const approach = [
+  { index: '01', title: t.approachOneTitle, body: t.approachOneBody },
+  { index: '02', title: t.approachTwoTitle, body: t.approachTwoBody },
+  { index: '03', title: t.approachThreeTitle, body: t.approachThreeBody },
+]
+---
+
+<!-- Hero: name, role, one paragraph, three actions, portrait. -->
+<section class="border-b border-hairline">
+  <div class="mx-auto grid max-w-[90rem] items-center gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-[minmax(0,1fr)_minmax(240px,30%)] lg:gap-16">
+    <div class="flex flex-col gap-6">
+      <p class="label flex items-center gap-3"><span class="marker"></span>{t.heroKicker}</p>
+      <h1 class="display-hero">{personalInfo.fullname}</h1>
+      <p class="lead" data-live="bio"><Fragment set:html={renderBio(personalInfo, lang)} /></p>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <a class="btn btn-primary" href={portfolioUrl}>{t.heroPrimary}</a>
+        <a class="btn btn-outline" href={portfolioUrl + "/cv.pdf"}>{t.heroSecondary}</a>
+        <a class="btn btn-ghost" href={"mailto:" + personalInfo.email}>{t.heroTertiary}</a>
+      </div>
+
+      <div
+        class="grid grid-cols-2 gap-x-4 gap-y-5 border-t border-hairline-light pt-6 sm:grid-cols-4"
+        data-live="stats"
+        aria-live="polite"
+      >
+        <Fragment set:html={renderStats({ projects, skills, achievements, experiences }, t)} />
+      </div>
+    </div>
+
+    <figure class="max-w-[22rem] justify-self-start border border-hairline bg-paper p-3 lg:justify-self-end">
+      <img
+        src="/media/portrait.webp"
+        width="900"
+        height="1342"
+        alt={t.portraitAlt}
+        class="block aspect-[3/4] w-full object-cover"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <figcaption class="caption mt-3 flex items-center justify-between gap-3">
+        <span>{personalInfo.location}</span>
+        <span class="text-terracotta">Fig. 01</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 01 Gateway -->
+<section id="gateway" class="border-b border-hairline">
+  <div class="mx-auto max-w-[90rem] px-5 py-16 md:px-8 md:py-20">
+    <header class="flex flex-col gap-4">
+      <p class="label flex items-center gap-3"><span class="marker"></span>{t.gatewayKicker}</p>
+      <h2 class="display-section">{t.gatewayTitle}</h2>
+      <p class="lead">{t.gatewayLead}</p>
+    </header>
+
+    <ul class="mt-10 grid gap-px border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-4">
+      {
+        gateway.map((entry) => (
+          <li class="bg-paper">
+            <a
+              href={entry.href}
+              class="flex h-full flex-col gap-3 p-5 no-underline transition-colors hover:bg-surface"
+            >
+              <span class="data">{entry.index}</span>
+              <span class="display-sub">{entry.title}</span>
+              <span class="prose-body text-[0.9375rem] leading-relaxed">{entry.dek}</span>
+              <span class="action-link mt-auto pt-2">
+                {entry.action}
+                <span class="arrow" aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<!-- 02 Ecosystem -->
+<section id="projects" class="border-b border-hairline">
+  <div class="mx-auto max-w-[90rem] px-5 py-16 md:px-8 md:py-20">
+    <header class="flex flex-col gap-4">
+      <p class="label flex items-center gap-3"><span class="marker"></span>{t.projectsKicker}</p>
+      <h2 class="display-section">{t.projectsTitle}</h2>
+      <p class="lead">{t.projectsLead}</p>
+    </header>
+
+    <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3" data-live="projects">
+      <Fragment set:html={renderProjects(projects, releaseMap, t)} />
+    </div>
+  </div>
+</section>
+
+<!-- 03 Approach -->
+<section id="approach" class="border-b border-hairline">
+  <div class="mx-auto max-w-[90rem] px-5 py-16 md:px-8 md:py-20">
+    <header class="flex flex-col gap-4">
+      <p class="label flex items-center gap-3"><span class="marker"></span>{t.approachKicker}</p>
+      <h2 class="display-section">{t.approachTitle}</h2>
+      <p class="lead">{t.approachLead}</p>
+    </header>
+
+    <ol class="mt-10 grid gap-8 md:grid-cols-3">
+      {
+        approach.map((step) => (
+          <li class="flex flex-col gap-3 border-t border-hairline pt-5">
+            <span class="data">{step.index}</span>
+            <h3 class="display-sub">{step.title}</h3>
+            <p class="prose-body text-[0.9375rem] leading-relaxed">{step.body}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<!-- 04 Contributions -->
+<section id="contributions" class="border-b border-hairline">
+  <div class="mx-auto max-w-[90rem] px-5 py-16 md:px-8 md:py-20">
+    <header class="flex flex-col gap-4">
+      <p class="label flex items-center gap-3"><span class="marker"></span>{t.contributionsKicker}</p>
+      <h2 class="display-section">{t.contributionsTitle}</h2>
+      <p class="lead">{t.contributionsLead}</p>
+    </header>
+
+    <div class="mt-10 border-b border-hairline" data-live="contributions">
+      <Fragment set:html={renderContributions(achievements, t)} />
+    </div>
+  </div>
+</section>
+
+<!-- 05 Toolkit -->
+<section id="skills" class="border-b border-hairline">
+  <div class="mx-auto max-w-[90rem] px-5 py-16 md:px-8 md:py-20">
+    <header class="flex flex-col gap-4">
+      <p class="label flex items-center gap-3"><span class="marker"></span>{t.skillsKicker}</p>
+      <h2 class="display-section">{t.skillsTitle}</h2>
+      <p class="lead">{t.skillsLead}</p>
+    </header>
+
+    <div class="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-4" data-live="skills">
+      <Fragment set:html={renderSkills(skills, t)} />
+    </div>
+  </div>
+</section>
+
+<!-- 06 Contact -->
+<section id="contact">
+  <div class="mx-auto grid max-w-[90rem] gap-10 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-[1.2fr_1fr]">
+    <div class="flex flex-col gap-4">
+      <p class="label flex items-center gap-3"><span class="marker"></span>{t.contactKicker}</p>
+      <h2 class="display-section">{t.contactTitle}</h2>
+      <p class="lead">{t.contactLead}</p>
+      <div class="flex flex-wrap items-center gap-3 pt-2">
+        <a class="btn btn-primary" href={"mailto:" + personalInfo.email}>{t.heroTertiary}</a>
+        <a class="btn btn-outline" href={personalInfo.whatsApp} target="_blank" rel="noopener noreferrer">
+          {t.contactWhatsapp}
+        </a>
+      </div>
+    </div>
+
+    <dl class="grid gap-px border border-hairline bg-hairline" data-live="contact">
+      <Fragment set:html={renderContact(personalInfo, t)} />
+    </dl>
+  </div>
+</section>
+
+<!-- Runtime notice: hidden until the island decides the API is unreachable. -->
+<div
+  data-stale-banner
+  hidden
+  class="border-t border-hairline bg-surface"
+  role="status"
+  aria-live="polite"
+>
+  <div class="mx-auto flex max-w-[90rem] flex-wrap items-center gap-3 px-5 py-3 md:px-8">
+    <span class="caption text-ink-2">{t.staleBanner}</span>
+    <button type="button" data-retry class="label min-h-11 text-terracotta">{t.retry}</button>
+  </div>
+</div>
+
+<script>
+  import { hydrate } from '../scripts/hydrate'
+  import id from '../i18n/id'
+  import en from '../i18n/en'
+  import snapshot from '../../content/snapshot.json'
+
+  // The island gets real payload types; the JSON import is narrowed once here
+  // rather than casting at every use site.
+  hydrate({
+    lang: document.documentElement.lang === 'en' ? 'en' : 'id',
+    t: document.documentElement.lang === 'en' ? en : id,
+    snapshot: snapshot as never,
+  })
+</script>

@@ -1,0 +1,10 @@
+{
+  "name": "M. Abu Amar Al Badawi",
+  "short_name": "Abu Amar",
+  "description": "Gateway to the work of M. Abu Amar Al Badawi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f4ef",
+  "theme_color": "#b8442a",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
